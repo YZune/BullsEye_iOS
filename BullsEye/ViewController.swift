@@ -6,7 +6,9 @@
 //  Copyright © 2018 yzune. All rights reserved.
 //
 
+import QuartzCore
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -15,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var roundLabel: UILabel!
     
+    var audioPlayer: AVAudioPlayer!
     var currentValue = 0
     var targetValue = 0
     var score = 0
@@ -23,6 +26,20 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         startNewGame()
+        playBgMusic()
+    }
+    
+    func playBgMusic(){
+        let musicPath = Bundle.main.path(forResource: "Adam Young - Country Hymn", ofType: "mp3")
+        let url = URL.init(fileURLWithPath: musicPath!)
+        do{
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+        }catch _{
+            audioPlayer = nil
+        }
+        audioPlayer.numberOfLoops = -1
+        audioPlayer.prepareToPlay()
+        audioPlayer.play()
     }
     
     func startNewGame(){
@@ -37,6 +54,13 @@ class ViewController: UIViewController {
         currentValue = 50
         slider.value = Float(currentValue)
         updateLabel()
+        
+        let transition = CATransition()
+        transition.type = CATransitionType.fade
+        transition.duration = 0.5
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
+        
+        view.layer.add(transition, forKey: nil)
     }
     
     func updateLabel(){

@@ -13,6 +13,7 @@
 		AD4B161A21B91F7C001970B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4B161921B91F7C001970B1 /* Assets.xcassets */; };
 		AD4B161D21B91F7C001970B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4B161B21B91F7C001970B1 /* LaunchScreen.storyboard */; };
 		ADAB851621BFD7BF00264DFE /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAB851521BFD7BF00264DFE /* AboutViewController.swift */; };
+		ADAB851821C00AAA00264DFE /* Adam Young - Country Hymn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ADAB851721C00AAA00264DFE /* Adam Young - Country Hymn.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AD4B161C21B91F7C001970B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD4B161E21B91F7C001970B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADAB851521BFD7BF00264DFE /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		ADAB851721C00AAA00264DFE /* Adam Young - Country Hymn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Adam Young - Country Hymn.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		AD4B160621B91F7B001970B1 = {
 			isa = PBXGroup;
 			children = (
+				ADAB851921C00AC600264DFE /* Resource */,
 				AD4B161121B91F7B001970B1 /* BullsEye */,
 				AD4B161021B91F7B001970B1 /* Products */,
 			);
@@ -65,6 +68,14 @@
 				AD4B161E21B91F7C001970B1 /* Info.plist */,
 			);
 			path = BullsEye;
+			sourceTree = "<group>";
+		};
+		ADAB851921C00AC600264DFE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				ADAB851721C00AAA00264DFE /* Adam Young - Country Hymn.mp3 */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD4B161D21B91F7C001970B1 /* LaunchScreen.storyboard in Resources */,
+				ADAB851821C00AAA00264DFE /* Adam Young - Country Hymn.mp3 in Resources */,
 				AD4B161A21B91F7C001970B1 /* Assets.xcassets in Resources */,
 				AD4B161821B91F7B001970B1 /* Main.storyboard in Resources */,
 			);
