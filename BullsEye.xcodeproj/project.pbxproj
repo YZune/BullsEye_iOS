@@ -12,6 +12,7 @@
 		AD4B161821B91F7B001970B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4B161621B91F7B001970B1 /* Main.storyboard */; };
 		AD4B161A21B91F7C001970B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4B161921B91F7C001970B1 /* Assets.xcassets */; };
 		AD4B161D21B91F7C001970B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4B161B21B91F7C001970B1 /* LaunchScreen.storyboard */; };
+		ADAB851621BFD7BF00264DFE /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAB851521BFD7BF00264DFE /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		AD4B161921B91F7C001970B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD4B161C21B91F7C001970B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD4B161E21B91F7C001970B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADAB851521BFD7BF00264DFE /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				AD4B161221B91F7B001970B1 /* AppDelegate.swift */,
 				AD4B161421B91F7B001970B1 /* ViewController.swift */,
+				ADAB851521BFD7BF00264DFE /* AboutViewController.swift */,
 				AD4B161621B91F7B001970B1 /* Main.storyboard */,
 				AD4B161921B91F7C001970B1 /* Assets.xcassets */,
 				AD4B161B21B91F7C001970B1 /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADAB851621BFD7BF00264DFE /* AboutViewController.swift in Sources */,
 				AD4B161521B91F7B001970B1 /* ViewController.swift in Sources */,
 				AD4B161321B91F7B001970B1 /* AppDelegate.swift in Sources */,
 			);
@@ -282,7 +286,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BullsEye/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,6 +295,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yzune.BullsEye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,7 +305,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BullsEye/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +314,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yzune.BullsEye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
